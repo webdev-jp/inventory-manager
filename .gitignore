@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+*.user
+Logs/
+Backups/
+*.log
+__pycache__/
+*.pfx
+*.env

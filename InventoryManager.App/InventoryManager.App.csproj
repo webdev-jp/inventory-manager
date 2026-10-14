@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManager.Core\InventoryManager.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ships alongside the built app in every output/publish folder, so it travels with
+         InventoryManager.App.exe wherever an admin copies it - no separate manual install step.
+         The real protection against a tampered copy is the Authenticode check the app runs before
+         launching it (MainForm.LaunchOffboardingScript / ScriptSignatureVerifier), not folder
+         permissions: the app refuses to run this file unless it carries a valid signature from the
+         pinned Contoso IT Scripts cert, so replacing its contents without the signing key just breaks
+         it rather than running attacker code.
+
+         Build action MUST be Content, not None: ClickOnce's own file-inclusion logic
+         (Microsoft.Common.CurrentVersion.targets' _CopyFilesToPublishFolder target) includes
+         @(ContentWithTargetPath) unconditionally, but only includes a <None> item if it also
+         happens to be the sole entry in a separate @(PublishFile) list - a fragile single-item
+         comparison that silently drops extra data files the moment there's more than one. Found
+         live 2026-09-16: both this file and the Documentation guide below were present in a
+         regular `dotnet build`/`dotnet publish` output (which just honors CopyToOutputDirectory)
+         but silently missing from the actual ClickOnce Application Files\<version>\ payload every
+         client downloads - confirmed by inspecting the real published files on
+         \\fileserver01\IT-Apps\InventoryApp\ after a publish that reported 0 errors. -->
+    <Content Include="..\Offboarding2026.ps1">
+      <Link>Offboarding2026.ps1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- Ships the User Guide alongside the app (Documentation menu item, MainForm.OpenDocumentation)
+         so it's available offline, on any admin's machine, without depending on the separately
+         published claude.ai artifact or a network share being reachable. -->
+    <Content Include="..\docs\inventory-manager-guide.html">
+      <Link>docs\inventory-manager-guide.html</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>inventory.ico</ApplicationIcon>
+  </PropertyGroup>
+
+</Project>

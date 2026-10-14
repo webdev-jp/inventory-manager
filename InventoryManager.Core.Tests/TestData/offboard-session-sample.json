@@ -1,0 +1,342 @@
+﻿{
+    "SchemaVersion":  1,
+    "Mode":  "Offboard",
+    "ExpectedUser":  "jdoe",
+    "StartedAt":  "2026-09-30T11:10:08.4790184-04:00",
+    "ClosedAt":  "2026-09-30T11:10:09.2146691-04:00",
+    "Runs":  [
+                 {
+                     "SamAccountName":  "jdoe",
+                     "UserPrincipalName":  "jdoe@contoso.org",
+                     "Mail":  "john.doe@contoso.org",
+                     "ObjectGuid":  "11111111-2222-3333-4444-555555555555",
+                     "TestMode":  true,
+                     "Ticket":  "T-4242",
+                     "Operator":  "tester",
+                     "StartedAt":  "2026-09-30T11:10:08.6363319-04:00",
+                     "CompletedAt":  "2026-09-30T11:10:08.8561476-04:00",
+                     "ErrorCount":  0,
+                     "Steps":  [
+                                   {
+                                       "Id":  "DisableAD",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RandomPassword",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "StampDescription",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "HideGAL_AD",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ExportGroups",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RemoveGroups",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "MoveOU",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "DeltaSync",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ExportMbxPerms",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ConvertShared",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ForwardMail",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "AutoReply",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "GrantMbxAccess",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "DisableProtocols",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RevokeSessions",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ArchiveOneDrive",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "OneDriveAccess",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RemoveLicenses",
+                                       "Result":  "Simulated",
+                                       "Error":  null
+                                   }
+                               ],
+                     "Journal":  [
+
+                                 ]
+                 },
+                 {
+                     "SamAccountName":  "jdoe",
+                     "UserPrincipalName":  "jdoe@contoso.org",
+                     "Mail":  "john.doe@contoso.org",
+                     "ObjectGuid":  "11111111-2222-3333-4444-555555555555",
+                     "TestMode":  false,
+                     "Ticket":  "T-4242",
+                     "Operator":  "tester",
+                     "StartedAt":  "2026-09-30T11:10:08.9687415-04:00",
+                     "CompletedAt":  "2026-09-30T11:10:09.1001870-04:00",
+                     "ErrorCount":  0,
+                     "Steps":  [
+                                   {
+                                       "Id":  "DisableAD",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RandomPassword",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "StampDescription",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "HideGAL_AD",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ExportGroups",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RemoveGroups",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "MoveOU",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "DeltaSync",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ExportMbxPerms",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ConvertShared",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ForwardMail",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "AutoReply",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "GrantMbxAccess",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "DisableProtocols",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RevokeSessions",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "ArchiveOneDrive",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "OneDriveAccess",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   },
+                                   {
+                                       "Id":  "RemoveLicenses",
+                                       "Result":  "OK",
+                                       "Error":  null
+                                   }
+                               ],
+                     "Journal":  [
+                                     {
+                                         "Step":  "DisableAD",
+                                         "Data":  {
+                                                      "WasEnabled":  true
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "RandomPassword",
+                                         "Data":  {
+                                                      "NotUndoable":  "Password was randomized - the old one can\u0027t be restored. Reset it and give the user the new one."
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "StampDescription",
+                                         "Data":  {
+                                                      "OldDescription":  "Case Manager - Southside"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "HideGAL_AD",
+                                         "Data":  {
+                                                      "OldValue":  null
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "RemoveGroups",
+                                         "Data":  {
+                                                      "Groups":  [
+                                                                     "CN=G1,DC=contoso,DC=local",
+                                                                     "CN=G2,DC=contoso,DC=local"
+                                                                 ]
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "MoveOU",
+                                         "Data":  {
+                                                      "OriginalOU":  "OU=Staff,DC=contoso,DC=local"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "ConvertShared",
+                                         "Data":  {
+                                                      "OldType":  "UserMailbox"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "ConvertShared",
+                                         "Data":  {
+                                                      "OldHidden":  false
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "ForwardMail",
+                                         "Data":  {
+                                                      "OldDeliverAndForward":  false,
+                                                      "OldForwardingAddress":  ""
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "AutoReply",
+                                         "Data":  {
+                                                      "OldAudience":  "None",
+                                                      "OldExternal":  "",
+                                                      "OldInternal":  "",
+                                                      "OldState":  "Disabled"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "GrantMbxAccess",
+                                         "Data":  {
+                                                      "Right":  "FullAccess",
+                                                      "Manager":  "boss@contoso.org"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "GrantMbxAccess",
+                                         "Data":  {
+                                                      "Right":  "SendAs",
+                                                      "Manager":  "boss@contoso.org"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "DisableProtocols",
+                                         "Data":  {
+                                                      "Pop":  false,
+                                                      "OWA":  true,
+                                                      "ActiveSync":  true,
+                                                      "Imap":  false
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "RevokeSessions",
+                                         "Data":  {
+                                                      "NotUndoable":  "Sign-in sessions were revoked - harmless, the user just signs in again."
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "ArchiveOneDrive",
+                                         "Data":  {
+                                                      "NotUndoable":  "OneDrive files were archived to \u0027IT/jdoe\u0027 (3 item(s) copied, 3 removed from OneDrive into its recycle bin). Restore them from the recycle bin or copy them back from the archive if needed. it@contoso.org also kept site-admin access to https://contoso-my.sharepoint.com/personal/jdoe - remove it if it\u0027s no longer needed."
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "OneDriveAccess",
+                                         "Data":  {
+                                                      "Site":  "https://contoso-my.sharepoint.com/personal/jdoe_contoso_org",
+                                                      "Manager":  "boss@contoso.org"
+                                                  }
+                                     },
+                                     {
+                                         "Step":  "RemoveLicenses",
+                                         "Data":  {
+                                                      "SkuNames":  [
+                                                                       "SPE_E3"
+                                                                   ],
+                                                      "SkuIds":  [
+                                                                     "sku-e3"
+                                                                 ]
+                                                  }
+                                     }
+                                 ]
+                 }
+             ]
+}

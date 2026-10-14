@@ -1,0 +1,31 @@
+﻿{
+    "SchemaVersion":  1,
+    "Mode":  "UndoReport",
+    "SamAccountName":  "jdoe",
+    "StartedAt":  "2026-09-30T11:10:09.2597478-04:00",
+    "CompletedAt":  "2026-09-30T11:10:09.3147128-04:00",
+    "Undone":  [
+                   "RemoveLicenses: License(s) re-assigned: SPE_E3.",
+                   "OneDriveAccess: Removed boss@contoso.org\u0027s site-admin access to the OneDrive.",
+                   "DisableProtocols: ActiveSync/OWA/IMAP/POP settings restored.",
+                   "GrantMbxAccess: Removed SendAs for boss@contoso.org.",
+                   "GrantMbxAccess: Removed FullAccess for boss@contoso.org.",
+                   "AutoReply: Auto-reply restored (state: Disabled).",
+                   "ForwardMail: Mail forwarding removed.",
+                   "ConvertShared: Mailbox shown in address lists again.",
+                   "ConvertShared: Mailbox converted back to UserMailbox.",
+                   "MoveOU: Moved back to OU=Staff,DC=contoso,DC=local.",
+                   "HideGAL_AD: Address book visibility (AD attribute) restored.",
+                   "StampDescription: AD Description restored to: Case Manager - Southside",
+                   "DisableAD: AD account re-enabled.",
+                   "DeltaSync: delta sync triggered so the cloud picks up the restored AD account."
+               ],
+    "Failed":  [
+                   "RemoveGroups: Re-added 1 of 2 group(s). Failed: CN=G2,DC=contoso,DC=local (Insufficient access rights)"
+               ],
+    "NotUndoable":  [
+                        "ArchiveOneDrive: OneDrive files were archived to \u0027IT/jdoe\u0027 (3 item(s) copied, 3 removed from OneDrive into its recycle bin). Restore them from the recycle bin or copy them back from the archive if needed. it@contoso.org also kept site-admin access to https://contoso-my.sharepoint.com/personal/jdoe - remove it if it\u0027s no longer needed.",
+                        "RevokeSessions: Sign-in sessions were revoked - harmless, the user just signs in again.",
+                        "RandomPassword: Password was randomized - the old one can\u0027t be restored. Reset it and give the user the new one."
+                    ]
+}
